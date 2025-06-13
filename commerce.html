@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Online</title>
+    <link rel="stylesheet" href="commerce.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="#" class="logo"><img src="src/assets/catlove.png"></a>
+            <nav>
+                <ul>
+                    <li><a href="#">PRODUTOS</a></li>
+                    <li><a href="#">SERVIÇOS</a></li>
+                    <li><a href="#">CLIENTES</a></li>
+                    <li><a href="#">DESCONTOS</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="button cart-button">Cadastre-se</a>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <aside class="filters-sidebar">
+            <h2>Filtros</h2>
+
+            <div class="filter-section">
+                <h3>Categorias</h3>
+                <ul>
+                    <li><a href="#" id="racoes">Rações</a></li>
+                    <li><a href="#" id="petiscos">Petiscos</a></li>
+                    <li><a href="#" id="cama">Camas e arranhadores</a></li>
+                    <li><a href="#" id="caixas">Caixas e areias</a></li>
+                    <li><a href="#" id="roupas">Roupas</a></li>
+                </ul>
+            </div>
+
+            <div class="filter-section">
+                <h3>Preço</h3>
+                <ul>
+                    <li><a href="#" id="menor-preco">Até R$50</a></li>
+                    <li><a href="#" id="medio-preco">R$51 - R$100</a></li>
+                    <li><a href="#" id="alto-preco">R$101 - R$200</a></li>
+                    <li><a href="#" id="maximo-preco">Acima de R$200</a></li>
+                </ul>
+            </div>
+
+            <div class="filter-section">
+                <h3>Marca</h3>
+                <ul>
+                    <li><label><input type="checkbox" name="marca" id="limarca1" value="CatParty"> Marca A</label></li>
+                    <li><label><input type="checkbox" name="marca" id="limarca2" value="PetPlast"> Marca B</label></li>
+                    <li><label><input type="checkbox" name="marca" id="limarca3" value="WhiskCat"> Marca C</label></li>
+                </ul>
+            </div>
+
+            <button class="apply-filters-btn">Aplicar Filtros</button>
+
+        </aside>
+
+        <section class="grid">
+            <h2>Produtos Populares</h2>
+            <div class="div-produtos" id="div-produtos"></div>
+            <!-- <article class="product-card">
+                <a href="#"> <img src="https://via.placeholder.com/200x150?text=Produto+1" alt="Descrição do Produto 1">
+                    <div class="product-info">
+                        <h3>Nome do Produto Muito Legal e Descritivo 1</h3>
+                        <p class="price">R$ 99,90</p>
+                        <p class="installments">ou 10x de R$ 9,99 sem juros</p>
+                    </div>
+                </a>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+
+            </article> -->
+        </section>
+
+        <footer class="site-footer">
+            <div class="container footer-content">
+                <p>&copy; 2025 MinhaLoja. Todos os direitos reservados.</p>
+                <nav class="footer-nav">
+                    <a href="#">Sobre Nós</a>
+                    <a href="#">Contato</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Política de Privacidade</a>
+                </nav>
+            </div>
+        </footer>
+
+        <script type="module" src="commerce.js"></script>
+</body>
+
+</html>

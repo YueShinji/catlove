@@ -1,0 +1,591 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+       font-family: 'Konkhmer Sleokchher';
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafae9;
+
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* cor */
+:root {
+    --primary-pink: #F9C9BD;
+    --highlight-red: #e8344e;
+    /* Color FELIZ, SERVIÇOS, ? */
+    --dark-text: #000000;
+    --light-gray-bg: #F3F3E9;
+    /* Background */
+    --placeholder-gray: F3F3E9;
+    --white: F4CED3#F3F3E9;
+}
+
+/* header */
+    header {
+        background-color: var(--white);
+        border-bottom: 5px solid #ff0202;
+        padding:10px
+    }
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .logo img {
+        height: 100px;
+    }
+
+    header nav ul {
+        display: flex;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-left: 20px;
+        /* espaço */
+    }
+
+    header nav ul li a {
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: var(--dark-text);
+        text-transform: uppercase;
+        padding: 15px;
+    }
+
+    header nav ul li a:hover {
+        color: var(--highlight-red);}
+
+    header .button.cart-button {
+
+        background-color: var(--white);
+        color: var(--white);
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+        border-radius: 40px;  
+        border: 2px solid red
+
+    }
+
+.hero {
+    background-image: url('./src/assets/background.png'); 
+    background-size: 1453px;        
+    background-position: center center;
+    background-repeat: no-repeat;     
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+}
+
+.quem-somos {
+    background-color: var(--primary-pink);
+    padding: 60px 0;
+    text-align: center;
+    height: 100vh;
+    inline-size: var(--highlight-red);
+    border-top: 5px solid #ff0202;
+    background-size: 90%; 
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: var(--primary-pink);
+
+}
+
+
+
+.quem-somos h2 {
+    font-size: 10rem;
+    color: var(--highlight-red);
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#gosma {
+    position: absolute;
+    top: 100vh; 
+    right: 10%;
+    transform: translateY(-10%); 
+    width: 500px; 
+    z-index: 2;
+}
+
+.quem-somos h1 {
+    font-size: 90px;
+    font-family: 'Kodchasan';
+}
+
+.quem-somos p {
+    font-size: 40px;
+}
+
+.novelo {
+        position: absolute;
+        top: 200vh; 
+        transform: translateY(-10%); 
+}
+
+#us {
+    margin-top: 300px; 
+    text-align: center;
+    font-size: 70px;
+}
+
+.preto {
+    color: #000000;
+}
+
+.vermelho {
+    color: var(--highlight-red);
+}
+
+.containerw {
+    margin-top: 16px; /* separação */
+    padding: 2rem;
+}
+
+.slider-wrapper {
+	position: relative;
+	max-width: 100rem;
+	margin: 0 auto;
+
+}
+
+
+.slider {
+	display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0.5rem;
+	-ms-overflow-style: none; 
+}
+
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.slider img {
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+}
+
+.slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.slider-nav a {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+	opacity: 1;
+}
+
+/* ==================
+   Estilos do Rodapé
+   ================== */
+
+   .site-footer {
+    background-color: var(--primary-pink); /* Usando a cor rosa definida */
+    color: var(--dark-text); /* Cor de texto escura */
+    padding: 40px 0;        /* Espaçamento interno (vertical, horizontal) */
+    margin-top: 80px;       /* Espaço acima do rodapé */
+    border-top: 5px solid var(--highlight-red); /* Borda superior vermelha, como no header */
+    font-family: 'Kodchasan', sans-serif; /* Usando uma fonte do seu CSS, ajuste se necessário */
+    font-size: 0.9rem;      /* Tamanho de fonte base para o rodapé */
+}
+
+.site-footer .container.footer-content {
+    display: flex;
+    justify-content: space-between; /* Espaça os blocos de conteúdo */
+    align-items: flex-start;       /* Alinha os blocos pelo topo */
+    flex-wrap: wrap;              /* Permite que os blocos quebrem linha em telas menores */
+    gap: 30px;                    /* Espaço entre os blocos quando quebram linha */
+}
+
+/* Bloco de Informações (Logo e Copyright) */
+.footer-info {
+    flex-basis: 250px; /* Largura base para este bloco */
+    flex-grow: 1;      /* Permite crescer se houver espaço */
+}
+
+.footer-logo {
+    height: 50px;      /* Tamanho do logo no rodapé */
+    margin-bottom: 15px;
+}
+
+.footer-info p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Bloco de Navegação */
+.footer-nav {
+    flex-basis: 180px;
+    flex-grow: 1;
+}
+
+/* Bloco de Contato */
+.footer-contact {
+    flex-basis: 220px;
+    flex-grow: 1;
+}
+
+/* Estilos comuns para títulos e listas no rodapé */
+.site-footer h3 {
+    font-family: 'Konkhmer Sleokchher', sans-serif; /* Fonte dos títulos */
+    font-size: 1.2rem;
+    color: var(--highlight-red); /* Cor de destaque vermelha */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.site-footer ul {
+    padding: 0; /* Remove padding padrão da lista */
+}
+
+.site-footer ul li {
+    margin-bottom: 8px; /* Espaço entre itens da lista */
+}
+
+.site-footer a {
+    color: var(--dark-text); /* Cor padrão dos links */
+    transition: color 0.3s ease; /* Suaviza a mudança de cor */
+}
+
+.site-footer a:hover {
+    color: var(--highlight-red); /* Muda a cor do link no hover */
+    text-decoration: underline; /* Adiciona sublinhado no hover */
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+}
+
+/* Ícones de Redes Sociais */
+.social-media {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px; /* Espaço entre os ícones */
+}
+
+.social-media a img {
+    height: 28px;  /* Tamanho dos ícones */
+    width: 28px;
+    opacity: 0.9;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.social-media a:hover img {
+    opacity: 1;
+    transform: scale(1.1); /* Efeito de leve zoom no hover */
+}
+
+
+/* --- Responsividade para o Rodapé --- */
+@media (max-width: 768px) {
+    .site-footer .container.footer-content {
+        flex-direction: column; /* Empilha os blocos verticalmente */
+        align-items: center;   /* Centraliza os blocos */
+        text-align: center;    /* Centraliza o texto dentro dos blocos */
+        gap: 40px;             /* Aumenta o espaçamento vertical */
+    }
+
+    .footer-info,
+    .footer-nav,
+    .footer-contact {
+        flex-basis: auto; /* Remove a largura base */
+        width: 100%;      /* Faz cada bloco ocupar toda a largura */
+        max-width: 350px; /* Limita a largura máxima para melhor leitura */
+    }
+
+    .footer-nav ul,
+    .social-media {
+        justify-content: center; /* Centraliza os itens/ícones */
+    }
+
+    .footer-logo {
+        margin-left: auto; /* Centraliza o logo se o texto estiver centralizado */
+        margin-right: auto;
+    }
+}
+/* --- Responsividade --- */
+
+/* Telas médias (Tablets) */
+@media (max-width: 960px) {
+    .hero .hero-content {
+        grid-template-columns: 1fr auto;
+        /* Duas colunas: Texto | Logo/Gato */
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "text-top   logo"
+            "graphic    graphic"
+            "text-bottom text-bottom";
+        /* Texto de baixo ocupa as duas colunas */
+        gap: 15px;
+    }
+
+    .hero .hero-text-top {
+        justify-self: start;
+    }
+
+    .hero .catlove-logo-hero {
+        justify-self: end;
+        max-width: 120px;
+    }
+
+    .hero .hero-graphic {
+        max-width: 380px;
+        /* Diminuir um pouco o gato */
+    }
+
+    .hero .hero-text-bottom {
+        justify-self: end;
+        /* Manter à direita */
+        text-align: right;
+        margin-top: -10px;
+        /* Ajustar espaçamento */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+        /* Diminuir fonte */
+    }
+}
+
+
+/* Telas pequenas (Celulares) */
+@media (max-width: 600px) {
+    .hero {
+        padding: 30px 0 60px 0;
+        /* Reduzir padding */
+    }
+
+    .hero .hero-content {
+        grid-template-columns: 1fr;
+        /* Coluna única */
+        grid-template-rows: auto auto auto auto;
+        /* Uma linha para cada elemento */
+        grid-template-areas:
+            "text-top"
+            "logo"
+            "graphic"
+            "text-bottom";
+        justify-items: center;
+        /* Centralizar tudo na coluna */
+        text-align: center;
+        /* Centralizar texto dentro dos divs */
+        gap: 20px;
+        /* Aumentar gap vertical */
+    }
+
+    .hero .hero-text-top,
+    .hero .catlove-logo-hero,
+    .hero .hero-graphic,
+    .hero .hero-text-bottom {
+        justify-self: center;
+        /* Garantir centralização horizontal */
+        align-self: center;
+        /* Garantir centralização vertical */
+        text-align: center;
+        /* Centralizar texto dos h1 */
+        margin: 0;
+        /* Resetar margens */
+    }
+
+    .hero .catlove-logo-hero {
+        max-width: 100px;
+        /* Reduzir logo */
+    }
+
+    .hero .hero-graphic {
+        max-width: 80%;
+        /* Gato ocupa % da largura */
+        order: 1;
+        /* Mudar a ordem visual se necessário (opcional) */
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        /* Reduzir mais a fonte */
+    }
+
+    .hero .hero-text-bottom {
+        text-align: center;
+        /* Garantir centralização do texto */
+    }
+
+    .hero-background-shape {
+        height: 40%;
+        /* Ajustar altura do fundo */
+        transform: skewY(-6deg);
+        /* Aumentar levemente o ângulo */
+    }
+
+    
+}
+
+
+
+/* --- About Us Section --- 
+.about-us {
+    background-color: var(--primary-pink);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 2.8rem;
+    color: var(--highlight-red);
+    margin-bottom: 25px;
+    font-weight: 900;
+}
+
+.about-us h2 .question-mark {
+    
+}
+
+.about-us p {
+    max-width: 650px; 
+    margin: 0 auto;
+    color: var(--dark-text);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+
+.services {
+    background-color: var(--light-gray-bg);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.8rem;
+    color: var(--dark-text);
+    margin-bottom: 40px;
+    font-weight: 900;
+}
+
+.services h2 .highlight {
+    color: var(--highlight-red);
+}
+
+.services .service-items {
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+    flex-wrap: wrap; 
+}
+
+.services .service-item {
+    background-color: var(--placeholder-gray);
+    height: 280px; 
+    flex-basis: 280px; 
+    border-radius: 8px; 
+    
+*/
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    header nav ul li {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .hero .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .hero-text {
+        order: 2;
+        /* Text below image on mobile */
+        margin-top: 20px;
+    }
+
+    .hero .hero-image {
+        order: 1;
+        /* Image first on mobile */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .catlove-logo {
+        position: static;
+        /* Reset absolute positioning */
+        transform: none;
+        margin: 10px auto;
+        /* Center it */
+        max-width: 80px;
+    }
+
+    .about-us h2,
+    .services h2 {
+        font-size: 2rem;
+    }
+
+    .about-us p {
+        font-size: 0.9rem;
+    }
+}

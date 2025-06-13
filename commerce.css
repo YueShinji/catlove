@@ -1,0 +1,297 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif; 
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--white);
+    border-bottom: 5px solid #ff0202;
+    padding:10px
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 100px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    margin-left: 20px;
+    /* espaço */
+}
+
+header nav ul li a {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--dark-text);
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+header nav ul li a:hover {
+    color: var(--highlight-red);}
+
+header .button.cart-button {
+
+    background-color: var(--white);
+    color: var(--white);
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;  
+    border: 2px solid red
+
+}
+.logo h1 a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.search-form {
+    display: flex;
+    flex-grow: 1; /* Faz a busca ocupar o espaço disponível */
+    max-width: 600px; /* Limita a largura máxima da busca */
+}
+
+.search-form input[type="search"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+}
+
+.search-form button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    font-size: 1rem;
+}
+.search-form button:hover {
+    background-color: #0056b3;
+}
+
+
+.user-nav a {
+    margin-left: 15px;
+    color: #333;
+}
+.user-nav a:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+.main-content {
+    display: flex;
+    gap: 30px; /* Espaço entre filtros e produtos */
+}
+
+/* Barra Lateral de Filtros */
+.filters-sidebar {
+    flex: 0 0 220px; /* Largura fixa para a barra lateral (não cresce, não encolhe) */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: fit-content; /* Ajusta a altura ao conteúdo */
+}
+
+.filters-sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.filter-section {
+    margin-bottom: 25px;
+}
+
+.filter-section h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.filter-section ul li {
+    margin-bottom: 8px;
+}
+
+.filter-section ul li a {
+    color: #333;
+}
+.filter-section ul li a:hover {
+    color: #007bff;
+}
+
+.filter-section label {
+    display: block; /* Faz o label ocupar a linha toda */
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.filter-section input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.apply-filters-btn {
+    background-color: #28a745; /* Verde */
+    color: white;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.apply-filters-btn:hover {
+    background-color: #218838;
+}
+
+
+
+.site-footer {
+    background-color: #fff;
+    color: #666;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 10px;
+}
+
+.footer-nav a {
+    margin-left: 15px;
+    color: #666;
+}
+.footer-nav a:hover {
+    color: #333;
+}
+
+/* --- Media Queries para Responsividade (Exemplo Básico) --- */
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column; /* Empilha filtros e produtos */
+    }
+
+    .filters-sidebar {
+        flex: 0 0 auto; /* Reseta a largura fixa */
+        width: 100%; /* Ocupa toda a largura */
+        margin-bottom: 20px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: stretch; /* Estica itens */
+    }
+
+    .search-form {
+        max-width: none; /* Ocupa a largura disponível */
+        margin: 10px 0;
+    }
+
+    .user-nav {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .user-nav a {
+         margin: 0 10px;
+    }
+
+    .product-grid {
+         /* Ajuste as colunas mínimas para telas menores se necessário */
+         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+
+     .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+     .footer-nav a {
+         margin: 5px 10px;
+         display: inline-block; /* Garante espaçamento */
+     }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+         /* Exemplo: 2 colunas em telas bem pequenas */
+         grid-template-columns: repeat(2, 1fr);
+         gap: 10px;
+    }
+     .product-info h3 {
+        font-size: 0.9rem;
+     }
+     .price {
+        font-size: 1.1rem;
+     }
+     .installments {
+         font-size: 0.8rem;
+     }
+     .add-to-cart-btn {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+     }
+}

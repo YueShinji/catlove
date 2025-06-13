@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Judson", serif;
+
+}
+
+body { 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(187, 114, 114);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--white);
+    border-bottom: 5px solid #ff0202;
+    padding:10px
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 100px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    margin-left: 20px;
+    /* espaço */
+}
+
+header nav ul li a {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--dark-text);
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+header nav ul li a:hover {
+    color: var(--highlight-red);}
+
+header .button.cart-button {
+
+    background-color: var(--white);
+    color: var(--white);
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;  
+    border: 2px solid red
+
+}
+
+.wrapper {  
+    width: 500px;
+    background: #fff;
+    color: #41596C;
+    border-radius: 42px;
+    height: 420px;
+}
+
+.input-box{
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100px; 
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 10px;
+    font-size: 94px;
+    color: #41596C;
+}
+
+
+.div-input {
+    position: relative;
+    margin-top: 20px;
+}
+.div-input input {
+    width: 80%;
+    padding: 20px;
+    padding-left: 40px;
+    border: 1px solid #17354C;
+    border-radius: 42.5px;
+    box-sizing: border-box;
+    font-size: medium;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+i {
+    position: absolute;
+    top: 50%;
+    left: 70px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #888;
+    
+}
+.remember-forgot {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.remember-forgot label input{
+    accent-color: #fff;
+    
+}
+.remember-forgot a {
+    color: #41596C;
+}
+
+.button {
+    width: 80%;
+    height: 45px;
+    background: #B6CFE3;
+    border: 1 px #17354C;
+    border-radius: 12px;
+    font-size: 20px;
+    color: white;
+    margin: 0 10%;
+    margin-top: 20px;
+
+}
+
+.overlay-image {
+    width: 100%;
+    height: 120px;
+    position: relative;
+
+}
+  
+.container-imput {
+   margin-left: 40px;
+   margin-right: 40px;
+    }
+
+.icon2 {
+    top: 26px;
+}
